@@ -1,0 +1,62 @@
+[
+  {
+    "name": "ОАО Газпром",
+    "complexies": "-",
+    "production_days": 80,
+    "garanty_months": 24,
+    "prepayment": 30,
+    "price": {
+      "full": 3700000,
+      "discount": 25000
+    },
+    "actions": ""
+  },
+  {
+    "name": "ОАО Роснефть",
+    "complexies": "-",
+    "production_days": 90,
+    "garanty_months": 24,
+    "prepayment": 100,
+    "price": {
+      "full": 3200000,
+      "discount": 27800
+    },
+    "actions": ""
+  },
+  {
+    "name": "ОАО Росчтототам",
+    "complexies": "-",
+    "production_days": 75,
+    "garanty_months": 22,
+    "prepayment": 60,
+    "price": {
+      "full": 2800000,
+      "discount": 50000
+    },
+    "actions": ""
+  },
+  {
+    "name": "ОАО Какойтотам",
+    "complexies": "-",
+    "production_days": 120,
+    "garanty_months": 36,
+    "prepayment": 50,
+    "price": {
+      "full": 2500000,
+      "discount": 24700
+    },
+    "actions": ""
+  },
+  {
+    "name": "ОАО Ктоточтототам",
+    "complexies": "-",
+    "production_days": 90,
+    "garanty_months": 28,
+    "prepayment": 75,
+    "price": {
+      "full": 3100000,
+      "discount": 89000
+    },
+    "actions": ""
+  }
+]

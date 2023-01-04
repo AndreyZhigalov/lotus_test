@@ -1,0 +1,95 @@
+.App {
+  padding: 0 30px;
+}
+
+table {
+  border-spacing: unset;
+  border-collapse: collapse;
+}
+
+.header__container {
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  .header__text {
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(220, 0, 0);
+  }
+  .header__text_bold {
+    font-weight: 600;
+  }
+}
+
+.wrapper {
+  overflow-x: auto;
+}
+
+.notice {
+  padding: 4px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border-radius: 5px;
+  font-weight: 600;
+  background-color: #fff1f7;
+  color: rgb(223, 0, 82);
+}
+
+.timer {
+  &[data-current-member='true'] {
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(254, 209, 209);
+    font-weight: 600;
+    color: #df0052;
+    &::after {
+      position: absolute;
+      top: calc(50% - 7px);
+      right: 30px;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background: url(./assets/img/pink-sand-clock.png) center center no-repeat;
+      background-size: 15px;
+    }
+  }
+}
+
+.table__header {
+  width: 100%;
+  min-width: 280px;
+  color: rgb(91, 157, 222);
+  &:first-of-type {
+    height: 50px;
+  }
+  ~ td {
+    text-align: center;
+  }
+}
+
+.row {
+  &:nth-child(2n + 1) {
+    background-color: rgb(240, 240, 240);
+  }
+  > td:not(:first-of-type) {
+    text-align: center;
+    > tr {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.pricies {
+  > tr {
+    font-weight: 600;
+  }
+  > tr:nth-child(1) {
+    color: rgb(91, 157, 222);
+  }
+  > tr:nth-child(2) {
+    color: #df0052;
+  }
+  > tr:nth-child(3) {
+    color: #148500;
+  }
+}
