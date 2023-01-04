@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
 import type { MemberType } from '../../../types/Global';
-const baseTime = `0000000000000`;
 
 const Timer: React.FC<{ members: MemberType[] }> = ({ members }) => {
   const [queue, setQueue] = useState<number>(1);
@@ -31,10 +30,7 @@ const Timer: React.FC<{ members: MemberType[] }> = ({ members }) => {
   };
 
   useEffect(() => {
-    let [minutes, seconds]: string[] = (
-      ((new Date().getTime() - new Date(baseTime).getTime()) / 1000 / 60) %
-      2
-    )
+    let [minutes, seconds]: string[] = ((new Date().getTime() / 1000 / 60) % 2)
       .toString()
       .split('.');
 
@@ -52,17 +48,8 @@ const Timer: React.FC<{ members: MemberType[] }> = ({ members }) => {
   }, []);
 
   useEffect(() => {
-    let currentQueue = localStorage.getItem('queue');
-
-    if (currentQueue !== null) {
-      setQueue(+currentQueue);
-    } else {
-      let num = Math.ceil(
-        ((new Date().getTime() - new Date(`0000000000000`).getTime()) / 1000 / 60) % members.length,
-      );
-      localStorage.setItem('queue', `${num}`);
-      setQueue(+num);
-    }
+    let num = (members.length * ((new Date().getTime() / 1000 / 120 / members.length) % 1) - 0.5)
+    setQueue(Math.ceil(num < 0 ? 5 : num));
   }, []);
 
   return (
