@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lotus_test/static/css/main.321426d2.css",
-    "main.js": "/lotus_test/static/js/main.c27c5432.js",
+    "main.js": "/lotus_test/static/js/main.46e693c8.js",
     "index.html": "/lotus_test/index.html",
     "main.321426d2.css.map": "/lotus_test/static/css/main.321426d2.css.map",
-    "main.c27c5432.js.map": "/lotus_test/static/js/main.c27c5432.js.map"
+    "main.46e693c8.js.map": "/lotus_test/static/js/main.46e693c8.js.map"
   },
   "entrypoints": [
     "static/css/main.321426d2.css",
-    "static/js/main.c27c5432.js"
+    "static/js/main.46e693c8.js"
   ]
 }
